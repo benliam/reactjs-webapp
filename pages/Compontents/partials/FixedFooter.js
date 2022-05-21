@@ -1,7 +1,6 @@
+import Link from 'next/link'
 
 function FixedFooter(props) {
-
-    const FooterOption = props.option
 
     return(
         <div>
@@ -10,12 +9,12 @@ function FixedFooter(props) {
           <div className="row">
             <div className="col-sm-6 offset-sm-3 copy text-center">{new Date().getFullYear()} © Benz.Tattoo Design. All rights reserve</div>
             <div className="col-sm-3 text-right">
-              <div className="social"><a className="trigger" href="#">{FooterOption}</a>
+              <div className="social"><a className="trigger" href="#">Follow</a>
                 <ul className="social-nav">
-                  <li> <a target="_blank" href="#">YouTube</a></li>
-                  <li> <a target="_blank" href="https://pinterest.com/benz.tattoodesign">Pinterest</a></li>
-                  <li> <a target="_blank" href="https://instagram.com/benz.tattoodesign">Instagram</a></li>
-                  <li> <a target="_blank" href="https://facebook.com/benz.tattoo.design">Facebook</a></li>
+                  <li> <Link passHref={true}  href="#">YouTube</Link></li>
+                  <li> <Link passHref={true}  href="https://pinterest.com/benz.tattoodesign">Pinterest</Link></li>
+                  <li> <Link passHref={true} href="https://instagram.com/benz.tattoodesign">Instagram</Link></li>
+                  <li> <Link passHref={true} href="https://facebook.com/benz.tattoo.design">Facebook</Link></li>
                 </ul>
               </div>
             </div>
