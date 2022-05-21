@@ -46,7 +46,7 @@ export async function getStaticProps(){
 
     // return to props
     return {
-        props: {text: process.env.CLOUDINARY_CLOUD_NAME, result: results,images }
+        props: {result: results,images }
     }
 }
 
