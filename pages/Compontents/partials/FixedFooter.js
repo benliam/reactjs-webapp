@@ -8,7 +8,7 @@ function FixedFooter(props) {
         <div className="container-fluid p-5">
           <div className="row">
             <div className="col-sm-6 offset-sm-3 copy text-center">{new Date().getFullYear()} © Benz.Tattoo Design. All rights reserve</div>
-            <div className="col-sm-3 text-right">
+            <div className="col-sm-3 text-right">2
               <div className="social"><a className="trigger" href="#">Follow</a>
                 <ul className="social-nav">
                   <li> <Link passHref={true}  href="#">YouTube</Link></li>
