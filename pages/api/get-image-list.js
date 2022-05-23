@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-import Menu from '../../utils/Menu'
+import ImagesList from '../../utils/ImagesList'
 
 export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe', data: Menu })
+  res.status(200).json({ status: 'success', data: ImagesList })
 }
