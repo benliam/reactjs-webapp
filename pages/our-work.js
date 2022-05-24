@@ -2,6 +2,7 @@
 import Layout from './Compontents/Layout';
 // server side libries
 import { createClient } from '@supabase/supabase-js'
+import Image from 'next/image'
 
 function OurWork({ images }) {
 
@@ -18,8 +19,8 @@ function OurWork({ images }) {
             <div className="grid gallery">
               <div className="grid-sizer col-1" />
               {images.map((image) => (
-          <ImageBox key={image.id} src={image.src} artist={image.artist} />
-          ))}
+              <ImageBox key={image.id} src={image.src} artist={image.artist} />
+              ))}
             </div>
           </div>
           <div className="container my-5 mt-5 pt-5 py-6">
@@ -37,7 +38,7 @@ function OurWork({ images }) {
   )
 }
 
-function ImageBox({src, artist, key}){
+function ImageBox({src, artist}){
   return (
     <a className="lightbox grid-item col-3" href={src}>
       <img alt="" layout="fill" objectFit="cover" src={src}/>
@@ -48,11 +49,18 @@ function ImageBox({src, artist, key}){
   )
 }
 
-
-
 export async function getStaticProps(){
-  const supabaseAdmin = createClient('https://cvksvmnlyajtrblsbwza.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN2a3N2bW5seWFqdHJibHNid3phIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY1MzMxODkzNSwiZXhwIjoxOTY4ODk0OTM1fQ.I6NVHEGgiIndzUBh4JG80xkItl5RjSYAVHbSGrdGbMo')
+
+   // Configuring Supabase API 
+  const supabaseAdmin = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL || '',
+    process.env.SUPABASE_SERVICE_ROLE_KEY || ''
+  )
+  
+  // Authorzing and get data from database
   const { data } = await supabaseAdmin.from('images').select('*').order('id')
+  
+  // returning database
   return {
     props: {
       images: data ? data : [],
