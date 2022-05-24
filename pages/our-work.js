@@ -60,6 +60,8 @@ export async function getStaticProps(){
   // Authorzing and get data from database
   const { data } = await supabaseAdmin.from('images').select('*').order('id')
   
+    console.log(data)
+
   // returning database
   return {
     props: {

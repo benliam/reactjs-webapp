@@ -20,7 +20,6 @@ function Layout (props) {
           <Head>
                 <title>{!props.title ? `Benz.Tattoo Design` : props.title}</title>
                 <link rel="icon" href="/images/favicon/benz-logo-icon-200.png"></link>
-                <meta name="viewport" content="user-scalable=no"></meta>
           </Head>  
         <Header option={props.header} />
         {props.children}

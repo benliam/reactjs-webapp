@@ -2,7 +2,6 @@ import Script from 'next/script'
 import Image from 'next/image'
 import Head from 'next/head'
 
-
 //import '../styles/globals.css'
 import '../styles/App.css'
 
