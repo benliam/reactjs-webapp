@@ -5,7 +5,8 @@ import Layout from './Compontents/Layout';
 
 function Home() {
   return (
-    <Layout title="Trang chủ" header="" footer="fixed">
+    <>
+    <Layout title="Benz.Tattoo Design - Tattoo Studio in Da Nang" header="" footer="fixed">
      <div>	
      <main>
         <div className="glide slider">
@@ -56,6 +57,7 @@ function Home() {
       </main>
 			</div>		   
     </Layout>
+    </>
   )
 }
 
