@@ -38,6 +38,7 @@ function Layout (props) {
           </Head>  
         <Header option={props.header} />
         {props.children}
+        
         <Toaster/>
           {(() => {
           if (FooterLayout == "fixed") {

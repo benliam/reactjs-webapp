@@ -16,10 +16,14 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#999999"></meta>
     </Head>
     <Component {...pageProps} />
+    <div id="fb-root"></div>
+        <div className="fb-customerchat"
+          attribution='setup_tool'
+          page_id="263952664181437">
+      </div>
     <Script src="js/main.bundle.js" strategy="beforeInteractive"/>
 
     <Script async src="https://www.googletagmanager.com/gtag/js?id=G-FDRP593V6T" strategy="afterInteractive"/>
-
 
     <Script
       strategy="afterInteractive"
