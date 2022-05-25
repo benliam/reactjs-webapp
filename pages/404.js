@@ -4,7 +4,7 @@ import Layout from './Compontents/Layout';
 function PageNotFound() {
   return (
     <>
-    <Layout title="Page Not Found"  header="" footer="fixed">
+    <Layout title="Page Not Found"  header="default" footer="fixed">
     <main>
       <div className="jumbotron jumbotron-fluid vh-100 d-flex align-items-center">
         <div className="container-fluid py-6 text-center">
