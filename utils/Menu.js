@@ -1,12 +1,12 @@
 const MenuList = [
     {
-        name: 'Home', href: '/'
+        name: 'home', href: '/'
     },
     {
-        name: 'Blog', href: '/blog'
+        name: 'blog', href: '/blog'
     },
     {
-        name: 'Pages', href: '#', child:[
+        name: 'pages', href: '#', child:[
             {
                 name: 'About us', href: '/about'
             },
@@ -19,8 +19,11 @@ const MenuList = [
         ]
     },
     {
-        name: 'Appointments', href: '/appointments'
+        name: 'book an appointment', href: '/appointments'
     },
+    {
+        name: 'contact', href: '/contact'
+    }
 ]
 
 export default MenuList

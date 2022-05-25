@@ -15,7 +15,7 @@ import BlogAlt2 from '../public/images/blog-alt2.jpg'
 import {BsArrowDownShort} from "react-icons/bs"
 
 // Toast notification
-import toast, { Toaster } from 'react-hot-toast'
+import toast from 'react-hot-toast'
 
 // Import Contents
 import Vietnamese from './Compontents/assets/AftercareInstruction/vi'
@@ -34,6 +34,7 @@ function Aftercare() {
     // Display notification
     toast(`The page has switched to ${msgText}`,{
       icon: '👏',
+      position: "top-center",
       style: {
         borderRadius: '50px',
         background: '#333',
@@ -52,7 +53,6 @@ function Aftercare() {
       <button className="btn mr-2" onClick={() => SwitchLanguage('en')}>English</button> 
     </div>
   }
-
 
   return (
     <>
@@ -87,7 +87,6 @@ function Aftercare() {
           </div>
         </section>
       </main>
-      <div><Toaster position="top-center" /></div>
     </Layout>
   </>
   )

@@ -8,6 +8,10 @@ import FixedFooter from './partials/FixedFooter'
 import ProjectFooter from './partials/ProjectFooter'
 
 
+// Add toast to all pages
+import { Toaster } from 'react-hot-toast'
+
+
 
 function Layout (props) {
 
@@ -23,6 +27,7 @@ function Layout (props) {
           </Head>  
         <Header option={props.header} />
         {props.children}
+        <Toaster/>
           {(() => {
           if (FooterLayout == "fixed") {
             return (
