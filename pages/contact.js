@@ -6,10 +6,24 @@ import ContactForm from './Compontents/assets/ContactForm'
 
 //Import Nextjs Libraries
 import Link from 'next/link'
+import Head from 'next/head'
 
 function Contact() {
   return (
     <>
+    <Head>
+                <meta name="description" content='The Tattoo  Piercing Studio based in Da Nang, Vietnam. The best Tattoo studio located at the heart of Da Nang. We ink what you dream!'></meta>
+                <meta name="keywords" content="tattoo shop, tattoo studio, tiệm xăm đà nẵng, tiệm xăm đẹp, tattoo đà nẵng, good tattoo shop, tattoo da nang, tattoo shop da nang, đà nẵng tattoo, hình xăm đẹp, hình xăm, piercing đà nẵng, piercing, đà nẵng piercing, best tattoo shop, studio tattoo da nang"></meta>
+                <meta property="og:title" content="Contact Us - Benz.Tattoo Design" ></meta>
+                <meta property="og:description" content='Contact - Get in touch with us at Benz.Tattoo Design'></meta>
+                <meta property="og:url" content="http://benztattoo.ink"></meta>
+                <meta property="og:site_name" content="BENZTATTOO.ink" ></meta>
+                <meta property="og:image" content="https://i.imgur.com/YnXT3od.png" />
+                <meta property="og:image:secure_url" content="https://i.imgur.com/YnXT3od.png" ></meta>
+                <meta name="twitter:card" content="summary"></meta>
+                <meta name="twitter:title" content="BenZ.Tattoo Design - Tattoo  Piercing studio Da Nang"></meta>
+                <meta name="twitter:image" content="https://i.imgur.com/YnXT3od.png" ></meta>
+     </Head> 
     <Layout title="Contact Us"  header="text-white" footer="default">
     <main>
     <section className="jumbotron jumbotron-fluid pb-0 bg-dark">
