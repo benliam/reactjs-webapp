@@ -35,7 +35,7 @@ function ContactForm() {
              error:'Something wrong happened! We cannot send your message',
            },
            {
-            position: "bottom-center",    
+            position: "top-center",    
             style: {
               borderRadius: '10px',
               background: '#333',
