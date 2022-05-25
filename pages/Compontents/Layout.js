@@ -26,7 +26,7 @@ function Layout (props) {
                 <meta name="description" content='The Tattoo  Piercing Studio based in Da Nang, Vietnam. The best Tattoo studio located at the heart of Da Nang. We ink what you dream!'></meta>
                 <meta name="keywords" content="tattoo shop, tattoo studio, tiệm xăm đà nẵng, tiệm xăm đẹp, tattoo đà nẵng, good tattoo shop, tattoo da nang, tattoo shop da nang, đà nẵng tattoo, hình xăm đẹp, hình xăm, piercing đà nẵng, piercing, đà nẵng piercing, best tattoo shop, studio tattoo da nang"></meta>
                 <meta property="og:title" content="BenZ.Tattoo Design - Tattoo  Piercing studio Da Nang" ></meta>
-                <meta property="og:description" content="<%= htmlWebpackPlugin.options.meta.description %>"></meta>
+                <meta property="og:description" content='The Tattoo  Piercing Studio based in Da Nang, Vietnam. The best Tattoo studio located at the heart of Da Nang. We ink what you dream!'></meta>
                 <meta property="og:url" content="http://benztattoo.ink/"></meta>
                 <meta property="og:site_name" content="BENZTATTOO.ink" ></meta>
                 <meta property="og:image" content="https://i.imgur.com/YnXT3od.png" />
@@ -34,6 +34,8 @@ function Layout (props) {
                 <meta name="twitter:card" content="summary"></meta>
                 <meta name="twitter:title" content="BenZ.Tattoo Design - Tattoo  Piercing studio Da Nang"></meta>
                 <meta name="twitter:image" content="https://i.imgur.com/YnXT3od.png" ></meta>
+                <meta property="fb:app_id"  content="569680180725353"></meta> 
+                <meta property="og:type"   content="article"></meta> 
                 
           </Head>  
         <Header option={props.header} />
