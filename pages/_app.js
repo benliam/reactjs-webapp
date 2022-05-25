@@ -17,6 +17,48 @@ function MyApp({ Component, pageProps }) {
     </Head>
     <Component {...pageProps} />
     <Script src="js/main.bundle.js" strategy="beforeInteractive"/>
+
+    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-FDRP593V6T" strategy="afterInteractive"/>
+
+
+    <Script
+      strategy="afterInteractive"
+      id={1}
+      dangerouslySetInnerHTML={{
+        __html: `
+        window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FDRP593V6T');
+      `,
+      }}/>
+
+    <Script
+      id={2}
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: `
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v9.0'
+          });
+        };
+
+        (function(d, s, id) {
+        //if(document.body.clientWidth<769) return;
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      `,
+      }}/>
+
+
+
     </>
   )
 }
