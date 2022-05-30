@@ -19,7 +19,7 @@ const MenuList = [
         ]
     },
     {
-        name: 'book an appointment', href: '/appointments'
+        name: 'make an appointment', href: '/appointments'
     },
     {
         name: 'contact', href: '/contact'

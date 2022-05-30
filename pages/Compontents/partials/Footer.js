@@ -12,7 +12,7 @@ function Footer(props) {
           <div className="container-fluid p-5">
             <div className="d-flex justify-content-between align-items-center">
               <SocialMediaDrop/>
-              <div className="copy">{new Date().getFullYear()} © Benz.Tattoo Design. All rights reserved</div><a style={{fontSize: 30}}  className="to-top" href="#" ><BsArrowUpSquareFill/></a>
+              <div className="copy">{new Date().getFullYear()} © Benz.Tattoo Design. Developed with ❤️ by <a href="https://instagram.com/mcgath.li">Ben Liam</a> </div><a style={{fontSize: 30}}  className="to-top" href="#" ><BsArrowUpSquareFill/></a>
             </div>
           </div>
     </footer>

@@ -5,6 +5,8 @@ import Head from 'next/head'
 //import '../styles/globals.css'
 import '../styles/App.css'
 
+import "nextjs-components/dist/styles/globals.css";
+
 
 function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page)

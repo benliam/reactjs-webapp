@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const withTM = require("next-transpile-modules")(["nextjs-components","react-datetime-picker"]);
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -15,4 +16,4 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+module.exports = withTM(nextConfig)

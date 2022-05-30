@@ -19,6 +19,8 @@ function Header(props) {
                     <img src='/images/logos/benz-logo.png' placeholder="blur" className="default"  ></img>
                     <img src='/images/logos/benz-logo-white.png' className="inverted"  ></img>
                 </a>
+
+
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="toggle-label">Menu</span>
                     <span className="toggle-label-close">Close</span>
