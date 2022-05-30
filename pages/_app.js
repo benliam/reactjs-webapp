@@ -22,9 +22,7 @@ function MyApp({ Component, pageProps }) {
           page_id="263952664181437">
       </div>
     <Script src="js/main.bundle.js" strategy="beforeInteractive"/>
-
     <Script async src="https://www.googletagmanager.com/gtag/js?id=G-FDRP593V6T" strategy="afterInteractive"/>
-
     <Script
       strategy="afterInteractive"
       id={1}

@@ -14,10 +14,8 @@ import { Toaster } from 'react-hot-toast'
 
 function Layout (props) {
 
-
     const FooterLayout = props.footer
-  
-
+    
     return(
         <div>
           <Head>
