@@ -14,35 +14,24 @@ import AppointmentInfo from './Compontents/assets/Appointment/AppointmentInfo'
 import Vietnamese from '../utils/Vietnamese'
 import English from '../utils/English'
 
+import {BsFillPatchCheckFill} from 'react-icons/bs'
+
 
 function Appointment() {
 
 
   const [pageContent, setPageContent] = useState(Vietnamese)
-  const [curentLanguage, setCurrentLanguage] = useState('Tiếng Việt')
+  const [curentLanguage, setCurrentLanguage] = useState('vi')
 
-
-  console.log(pageContent[0].form)
-
-
+ 
+  // Switching language function
   function changeLanguage(locale){
-
-   if(locale == 'vi'){
-    setPageContent(Vietnamese)
-    setCurrentLanguage('Tiếng Việt')
-   } 
-
-   if(locale == 'en'){
-    setPageContent(English)
-    setCurrentLanguage('English')
-
-   }
-
+    setCurrentLanguage(locale)
   }
 
   const SwitchLanguage = () => {
     return (
-      <div className="social"><a className="trigger">{curentLanguage}</a>
+      <div className="social"><a className="trigger"><BsFillPatchCheckFill style={{fontSize: 16, color: `#0761D1`}}/> {curentLanguage == 'vi' ? 'Tiếng Việt' : 'English'}</a>
                     <ul className="social-nav">
                     <li> <a onClick={() => changeLanguage('vi') }>Vietnamese</a></li>
                     <li> <a onClick={() => changeLanguage('en')}>English</a></li>
@@ -79,12 +68,12 @@ function Appointment() {
           <div className="row">
              {/** Left col */}
             <div className="col-sm-4 offset-md-1">
-            <AppointmentInfo pageContent={pageContent[0].form}/>
+            <AppointmentInfo/>
             </div>
 
             {/** Right col - Booking form */}
             <div className="col-sm-6">
-             <AppointmentForm pageContent={pageContent[0].form}/>
+             <AppointmentForm pageContent={curentLanguage}/>
             </div>
           </div>
         </div>
