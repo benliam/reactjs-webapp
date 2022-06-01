@@ -53,7 +53,7 @@ function ImageBox({src, artist}){
 export async function getStaticProps(){
 
    // Configuring Supabase API 
-  const supabaseAdmin = createClient(`https://nlgyqjadljvfirahwojf.supabase.co`,`${process.env.SUPABASE_SERVICE_ROLE_KEY}`)
+  const supabaseAdmin = createClient(`https://nlgyqjadljvfirahwojf.supabase.co`,`eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5sZ3lxamFkbGp2ZmlyYWh3b2pmIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTQxMDA4MDYsImV4cCI6MTk2OTY3NjgwNn0.ReboCVKt5WtbZLGaLy78ERWef9LvoXKjU2PKKOwbH1M`)
   
   // Authorzing and get data from database
   const { data } = await supabaseAdmin.from('images').select('*').order('id')
