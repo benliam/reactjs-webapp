@@ -38,9 +38,7 @@ function AppointmentForm({pageContent}) {
     const [dateTime, setDateTime] = useState(new Date());
     const [isLoading, setIsLoading] = useState(false);
 
-    const supabaseAdmin = createClient(`https://nlgyqjadljvfirahwojf.supabase.co`,`eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5sZ3lxamFkbGp2ZmlyYWh3b2pmIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY1MzQ3NTEwMywiZXhwIjoxOTY5MDUxMTAzfQ.gieyCrwufog6Mnmi6Npq3En2Ne24WikZ-2tLhshxijc`)
-
-    
+    const supabaseAdmin = createClient(`https://nlgyqjadljvfirahwojf.supabase.co`,`${process.env.SUPABASE_SERVICE_ADMIN_ROLE_KEY}`)
 
 
     const formRef = useRef()
