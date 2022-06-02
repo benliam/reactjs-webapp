@@ -38,7 +38,7 @@ function AppointmentForm({pageContent}) {
     const [dateTime, setDateTime] = useState(new Date());
     const [isLoading, setIsLoading] = useState(false);
 
-    const supabaseAdmin = createClient(`https://nlgyqjadljvfirahwojf.supabase.co`,`${process.env.SUPABASE_SERVICE_ADMIN_ROLE_KEY}`)
+    const supabaseAdmin = createClient(`https://nlgyqjadljvfirahwojf.supabase.co`,`${process.env.NEXT_PUBLIC_SUPABASE_SERVICE_ADMIN_ROLE_KEY}`)
 
 
     const formRef = useRef()
@@ -89,6 +89,35 @@ function AppointmentForm({pageContent}) {
          // Add datetime to object   
         data = { ...data, date : `${dateTime}` }
 
+
+        // if attachment available
+        if(data.attachment.length > 0){
+            const attachmentFile = data.attachment[0]
+            const uploadFile = await supabaseAdmin
+            .storage
+            .from('attachments')
+            .upload(`/${data.email}_${data.attachment[0].name}`, attachmentFile, {
+                cacheControl: '3600',
+                upsert: false
+            })  
+         
+            //console.log(uploadFile)
+
+            // // if file uploaded successfully
+            if(uploadFile){
+                const fileData = uploadFile.data
+                const fileName = fileData.Key 
+                
+                const { publicURL, error } = supabaseAdmin
+                .storage
+                .from('attachments')
+                .getPublicUrl(`${data.email}_${data.attachment[0].name}`)
+                
+                data = { ...data, attachmentUrl : `${publicURL}` }
+            }
+        } 
+           
+        
        // Processing sending request 
        const processing = await sendEmail(data);
         if(processing){
@@ -115,6 +144,9 @@ function AppointmentForm({pageContent}) {
             toast.error("We cannot sent your appointment at the moment! Please contact us through Instagram or Facebook")
             setIsLoading(false) 
         }
+
+        console.log(data)
+
 
    }
 
