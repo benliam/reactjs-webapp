@@ -14,7 +14,12 @@ import AppointmentInfo from './Compontents/assets/Appointment/AppointmentInfo'
 import Vietnamese from '../utils/Vietnamese'
 import English from '../utils/English'
 
+// React icons
 import {BsFillPatchCheckFill} from 'react-icons/bs'
+
+
+// Toast notification
+import toast from 'react-hot-toast'
 
 
 function Appointment() {
@@ -26,7 +31,23 @@ function Appointment() {
  
   // Switching language function
   function changeLanguage(locale){
+
+    const msgText = (locale == 'vi' ? "Tiếng Việt" : "English")
+
+    // Display notification
+    toast(`The page has switched to ${msgText}`,{
+      icon: '👏',
+      position: "top-center",
+      style: {
+        borderRadius: '50px',
+        background: '#333',
+        color: '#fff',
+      },
+    })
+
     setCurrentLanguage(locale)
+
+
   }
 
   const SwitchLanguage = () => {

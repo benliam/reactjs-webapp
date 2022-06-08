@@ -1,10 +1,20 @@
-function AppointmentInfo() {
+// import container content
+import Vietnamese from '../../../../utils/Vietnamese'
+import English from '../../../../utils/English'
+
+
+
+
+function AppointmentInfo({pageContent}) {
+
+     // Checking component language
+     const  dataPage = (pageContent == 'vi') ? Vietnamese : English
+     const  Content = dataPage[0].info
+
     return(
         <div>
-               <h3>Booking info</h3>
-              <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-              <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for  will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-              <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for  will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+               <h3 className="mb-4">{Content.heading}</h3>
+               <div dangerouslySetInnerHTML={{ __html: Content.description }}></div>
         </div>
     )
 }

@@ -27,6 +27,25 @@ const English = [
             phone_number: 'Please enter your phone number',
             description: 'Please write a short brief',
             description_short: 'Description is too short'
+        },
+        info:{
+            heading: 'Booking info',
+            description: `
+            <p>Please make sure you are <b><i>18+ years old</i></b> to submit a request</p>
+            <p>Please fill in the required information in the form next to it, please enter your email address and phone number correctly so that we can contact you easily</p>
+            <p>Describe in detail your tattoo idea, size and desired tattoo position so that we can better visualize it</p>
+            <br>
+            <p>After submitting the request successfully, we will contact you directly through the information you provided above to confirm the time and further advise as required</p>
+            <br><br>
+            <p><b>Note:</b> we will require a Deposit for all required schedules to ensure that your appointment request will be confirmed, Deposit will be unconditionally refunded if you Cancel before 1 working day</p>
+            <br>
+            <p>For any inquiries or requests, please contact us directly at:</p>
+            <p>Email: <b>info@benztattoo.ink</b><br>
+               Contact: <b>(+84) 93 6767 031</b><br>
+               Instagram: <a href="https://instagram.com"><b>@benz.tattodesign</b></a> <br>
+               Facebook: <a href="https://facebook.com/benz.tattoo.design"><b>Benz.Tattoo Design</b></a>
+            </p>
+            `
         }
     }
 ]
