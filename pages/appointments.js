@@ -68,7 +68,7 @@ function Appointment() {
           <div className="row">
              {/** Left col */}
             <div className="col-sm-4 offset-md-1">
-            <AppointmentInfo/>
+            <AppointmentInfo pageContent={curentLanguage} />
             </div>
 
             {/** Right col - Booking form */}

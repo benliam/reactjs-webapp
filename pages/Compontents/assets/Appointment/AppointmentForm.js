@@ -89,33 +89,33 @@ function AppointmentForm({pageContent}) {
          // Add datetime to object   
         data = { ...data, date : `${dateTime}` }
 
-
-        // // if attachment available
-        // if(data.attachment.length > 0){
-        //     const attachmentFile = data.attachment[0]
-        //     const uploadFile = await supabaseAdmin
-        //     .storage
-        //     .from('attachments')
-        //     .upload(`/${data.email}_${data.attachment[0].name}`, attachmentFile, {
-        //         cacheControl: '3600',
-        //         upsert: false
-        //     })  
+        
+        // if attachment available
+        if(data.attachment.length > 0){
+            const attachmentFile = data.attachment[0]
+            const uploadFile = await supabaseAdmin
+            .storage
+            .from('attachments')
+            .upload(`/${data.email}_${data.attachment[0].name}`, attachmentFile, {
+                cacheControl: '3600',
+                upsert: false
+            })  
          
-        //     //console.log(uploadFile)
+            //console.log(uploadFile)
 
-        //     // // if file uploaded successfully
-        //     if(uploadFile){
-        //         const fileData = uploadFile.data
-        //         const fileName = fileData.Key 
+            // // if file uploaded successfully
+            if(uploadFile){
+                const fileData = uploadFile.data
+                const fileName = fileData.Key 
                 
-        //         const { publicURL, error } = supabaseAdmin
-        //         .storage
-        //         .from('attachments')
-        //         .getPublicUrl(`${data.email}_${data.attachment[0].name}`)
+                const { publicURL, error } = supabaseAdmin
+                .storage
+                .from('attachments')
+                .getPublicUrl(`${data.email}_${data.attachment[0].name}`)
                 
-        //         data = { ...data, attachmentUrl : `${publicURL}` }
-        //     }
-        // } 
+                data = { ...data, attachmentUrl : `${publicURL}` }
+            }
+        } 
            
         
        // Processing sending request 
