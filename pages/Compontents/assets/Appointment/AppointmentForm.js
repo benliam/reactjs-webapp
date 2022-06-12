@@ -30,9 +30,6 @@ function AppointmentForm({pageContent}) {
     // EmailJs initial
     EmailJSInit("user_crUpvU6k3l3gRbmttSgbQ")
 
-
-
-
     // Make sure the client is over 18
     const [over18, setOver18] = useState(false)
     const [dateTime, setDateTime] = useState(new Date());

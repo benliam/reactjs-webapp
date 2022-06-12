@@ -40,8 +40,8 @@ const Vietnamese = [
             <p><b>Lưu ý:</b> chúng mình sẽ yêu cầu Deposit cho tất cả các lịch yêu cầu để đảm bảo rằng lich của bạn sẽ được xác nhận, Deposit sẽ được hoàn trả vô điều kiện nếu bạn nếu bạn Cancel trước 1 ngày làm việc</p>
             <br>
             <p>Mọi yêu cầu hoặc thắc mắc, vui lòng liên hệ trực tiếp tại:</p>
-            <p>Email: <b>info@benztattoo.ink</b><br>
-               Contact: <b>(+84) 93 6767 031</b><br>
+            <p>Email: <b><a href="mailto:info@benztattoo.ink">info@benztattoo.ink</a></b><br>
+               Contact: <b><a href="tel:+84936767031">(+84) 93 6767 031</a></b><br>
                Instagram: <a href="https://instagram.com"><b>@benz.tattodessign</b></a> <br>
                Facebook: <a href="https://facebook.com/benz.tattoo.design"><b>Benz.Tattoo Design</b></a> 
             </p>

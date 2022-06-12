@@ -40,8 +40,8 @@ const English = [
             <p><b>Note:</b> we will require a Deposit for all required schedules to ensure that your appointment request will be confirmed, Deposit will be unconditionally refunded if you Cancel before 1 working day</p>
             <br>
             <p>For any inquiries or requests, please contact us directly at:</p>
-            <p>Email: <b>info@benztattoo.ink</b><br>
-               Contact: <b>(+84) 93 6767 031</b><br>
+            <p>Email: <b><a href="mailto:info@benztattoo.ink">info@benztattoo.ink</a></b><br>
+               Contact: <b><a href="tel:+84936767031">(+84) 93 6767 031</a></b><br>
                Instagram: <a href="https://instagram.com"><b>@benz.tattodesign</b></a> <br>
                Facebook: <a href="https://facebook.com/benz.tattoo.design"><b>Benz.Tattoo Design</b></a>
             </p>
@@ -50,4 +50,4 @@ const English = [
     }
 ]
 
-export default English
+export default English 

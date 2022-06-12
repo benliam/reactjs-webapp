@@ -96,6 +96,7 @@ function Appointment() {
             <div className="col-sm-6">
              <AppointmentForm pageContent={curentLanguage}/>
             </div>
+            
           </div>
         </div>
       </section>
