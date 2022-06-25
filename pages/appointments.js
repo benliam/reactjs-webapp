@@ -32,7 +32,7 @@ function Appointment() {
   // Switching language function
   function changeLanguage(locale){
 
-    const msgText = (locale == 'vi' ? "Tiếng Việt" : "English")
+    const msgText = (locale == 'vi' ? "Vietnamese" : "English")
 
     // Display notification
     toast(`The page has switched to ${msgText}`,{
@@ -52,7 +52,7 @@ function Appointment() {
 
   const SwitchLanguage = () => {
     return (
-      <div className="social"><a className="trigger"><BsFillPatchCheckFill style={{fontSize: 16, color: `#0761D1`}}/> {curentLanguage == 'vi' ? 'Tiếng Việt' : 'English'}</a>
+      <div className="social"><a className="trigger"><BsFillPatchCheckFill style={{fontSize: 16, color: `#0761D1`}}/> {curentLanguage == 'vi' ? 'Vietnamese' : 'English'}</a>
                     <ul className="social-nav">
                     <li> <a onClick={() => changeLanguage('vi') }>Vietnamese</a></li>
                     <li> <a onClick={() => changeLanguage('en')}>English</a></li>
