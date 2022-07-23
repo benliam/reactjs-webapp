@@ -1,5 +1,6 @@
 // Page needed libraries
 import Head from 'next/head'
+import Script from 'next/script'
 import {useState} from 'react'
 
 // Import core layout
@@ -64,6 +65,10 @@ function Appointment() {
     <Layout title="Book an appointment" 
         header="text-white"
         footer="">
+          <Head>
+          <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css"></link>
+
+          </Head>
       <main>
       <section className="pt-0">
         <div className="jumbotron jumbotron-fluid vh-50 d-flex align-items-center bg-dark text-white">
@@ -101,6 +106,17 @@ function Appointment() {
         </div>
       </section>
     </main>
+    <Script src="https://cdn.jsdelivr.net/npm/flatpickr" strategy="beforeInteractive"/>
+            <Script
+            strategy="afterInteractive"
+            id={1}
+            dangerouslySetInnerHTML={{
+                __html: `
+                flatpickr("#dateTime", {
+                  enableTime: true,
+                  dateFormat: "d-m-Y H:i",
+                });`,
+             }}/>
     </Layout>   
   )
 }

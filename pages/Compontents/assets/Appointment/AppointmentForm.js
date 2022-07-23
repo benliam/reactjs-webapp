@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import { Checkbox } from "nextjs-components/dist/components/Checkbox";
 import { Button } from "nextjs-components/dist/components/Button";
 import toast from 'react-hot-toast'
@@ -6,6 +7,8 @@ import { fs } from "nextjs-components/dist/components/Fieldset";
 import { Text } from "nextjs-components/dist/components/Text";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";    
+import flatpickr from "flatpickr";
+
 
 // import container content
 import Vietnamese from '../../../../utils/Vietnamese'
@@ -32,7 +35,7 @@ function AppointmentForm({pageContent}) {
 
     // Make sure the client is over 18
     const [over18, setOver18] = useState(false)
-    const [dateTime, setDateTime] = useState(new Date());
+    const [dateTime, setDateTime] = useState('');
     const [isLoading, setIsLoading] = useState(false);
 
     const supabaseAdmin = createClient(`https://nlgyqjadljvfirahwojf.supabase.co`,`${process.env.NEXT_PUBLIC_SUPABASE_SERVICE_ADMIN_ROLE_KEY}`)
@@ -55,6 +58,8 @@ function AppointmentForm({pageContent}) {
             .email(validationText.email_invail),
         phone: Yup.string()
             .required(validationText.phone_number),
+            dateTime: Yup.string()
+            .required("Please select a date"),    
         gender: Yup.string()
             .required(validationText.gender),
         message: Yup.string()
@@ -80,14 +85,14 @@ function AppointmentForm({pageContent}) {
     
 
 
-       // Set loading button
+        // Set loading button
        setIsLoading(true) 
 
-         // Add datetime to object   
-        data = { ...data, date : `${dateTime}` }
+        // Add datetime to object   
+        // data = { ...data, date : `${dateTime}` }
 
         
-        // if attachment available
+       // if attachment available
         if(data.attachment.length > 0){
             const attachmentFile = data.attachment[0]
             const uploadFile = await supabaseAdmin
@@ -192,8 +197,9 @@ function AppointmentForm({pageContent}) {
                 <fs.Content>
                     <fs.Title>{formContent.time}</fs.Title>
                     <fs.Subtitle>{formContent.please_select_date}</fs.Subtitle>
-                <DatePicker  className="form-control" type='date' id="date" name="date" {...register('date')} selected={dateTime} onChange={setDateTime} />
-
+                    <input {...register('dateTime')} className={`form-control ${errors.datetime ? 'is-invalid' : ''}`}  id="dateTime" name="dateTime" type="text" placeholder="Please select date"  />
+                    <div className="invalid-feedback">{errors.dateTime?.message}</div>
+     
                 </fs.Content>
                 </fs.Fieldset>
                 </div>   
@@ -228,7 +234,7 @@ function AppointmentForm({pageContent}) {
                 {!isLoading ? <button className="btn btn-xs  mt-4" style={{borderRadius: 100}}  type="submit">{formContent.btn_submit}</button> :  <button className="btn btn-xs  mt-4" style={{borderRadius: 100}}  type="button" disabled >{formContent.btn_sending}</button> }
                 <button className="btn btn-xs ml-2 mt-4 btn-secondary" style={{borderRadius: 100}}  type="reset">{formContent.btn_reset}</button>
               </form>
-        </div>
+        </div>  
     )
 }
 
