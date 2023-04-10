@@ -5,8 +5,10 @@ import {useState} from 'react'
 
 // Import core layout
 import Layout from './Compontents/Layout';
+import { Button } from "nextjs-components/dist/components/Button";
   
 // Import page components
+import AppointmentForm from './Compontents/assets/Appointment/AppointmentForm'
 import AppointmentInfo from './Compontents/assets/Appointment/AppointmentInfo'
 
 // import container content
@@ -21,7 +23,7 @@ import {BsFillPatchCheckFill} from 'react-icons/bs'
 import toast from 'react-hot-toast'
 
 
-function AppointmentEmbed() {
+function Appointment() {
 
 
   const [pageContent, setPageContent] = useState(Vietnamese)
@@ -97,17 +99,27 @@ function AppointmentEmbed() {
 
             {/** Right col - Booking form */}
             <div className="col-sm-6">
-                 <Script src="https://apps.elfsight.com/p/platform.js" defer strategy="beforeInteractive"/>
-                 <div class="elfsight-app-a1d8f4e2-4dcf-4298-9844-280e64bea06e"></div>        
-
+             <AppointmentForm pageContent={curentLanguage}/>
             </div>
             
           </div>
         </div>
       </section>
     </main>
-
-    
+    <Script src="https://cdn.jsdelivr.net/npm/flatpickr" strategy="beforeInteractive"/>
+            <Script
+            strategy="afterInteractive"
+            id={1}
+            dangerouslySetInnerHTML={{
+                __html: `
+                flatpickr("#dateTime", {
+                  enableTime: true,
+                  allowInput: false,
+                  altFormat: "d-m-Y H:i",
+                  dateFormat: "d-m-Y H:i",
+                  disableMobile: true
+                });`,
+             }}/>
     </Layout>   
     </>
   )
@@ -118,4 +130,4 @@ function AppointmentEmbed() {
 
 
 
-export default AppointmentEmbed
+export default Appointment
