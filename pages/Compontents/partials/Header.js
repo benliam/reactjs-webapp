@@ -10,7 +10,6 @@ function Header(props) {
 
     // Header layout that definds does it have text white or not
     //const HeaderLayout = (Options.textWhite == 'true') ? "fixed-top text-white" : "fixed-top"
-      
     
     return(
         <header className={`fixed-top ${Options}`}>

@@ -98,7 +98,7 @@ function AppointmentEmbed() {
             {/** Right col - Booking form */}
             <div className="col-sm-6">
                  <Script src="https://apps.elfsight.com/p/platform.js" defer strategy="beforeInteractive"/>
-                 <div class="elfsight-app-a1d8f4e2-4dcf-4298-9844-280e64bea06e"></div>        
+                 <div className="elfsight-app-a1d8f4e2-4dcf-4298-9844-280e64bea06e"></div>        
 
             </div>
             
