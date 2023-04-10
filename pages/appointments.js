@@ -27,7 +27,7 @@ function Appointment() {
 
 
   const [pageContent, setPageContent] = useState(Vietnamese)
-  const [curentLanguage, setCurrentLanguage] = useState('vi')
+  const [curentLanguage, setCurrentLanguage] = useState('en')
 
  
   // Switching language function
