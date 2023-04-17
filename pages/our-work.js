@@ -26,7 +26,7 @@ function OurWork({ images }) {
             <div className="row justify-content-md-center text-center">
 
             <div className="col-sm-8 pb-5">
-               <a href='https://instagram.com/benz.tattoo.design' className="btn btn-primary" target="_blank">Load more</a>
+               <a href='https://instagram.com/benz.tattoo.design' rel="noreferrer" className="btn btn-primary" target="_blank">Load more</a>
               </div>
 
               <div className="col-sm-8">
