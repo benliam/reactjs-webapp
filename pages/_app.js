@@ -31,10 +31,10 @@ function MyApp({ Component, pageProps }) {
       dangerouslySetInnerHTML={{
         __html: `
         window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-FDRP593V6T');
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-FDRP593V6T');
       `,
       }}/>
 
