@@ -25,7 +25,7 @@ function AboutUs() {
     
   return (
     <>
-    <Layout title="About us"  header="" footer="">
+    <Layout title="About us"  header="" footer="" url="https://wwww.benztattoo.ink/about">
     <main>
         <section>
           <div className="container py-6">

@@ -6,7 +6,7 @@ import Layout from './Compontents/Layout';
 function Home() {
   return (
     <>
-    <Layout title="Benz.Tattoo Design - Tattoo Studio in Da Nang" header="" footer="fixed">
+    <Layout title="Benz.Tattoo Design - Tattoo Studio in Da Nang" header="" footer="fixed" url="https://wwww.benztattoo.ink/">
      <div>	
      <main>
         <div className="glide slider">

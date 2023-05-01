@@ -11,7 +11,7 @@ import Head from 'next/head'
 function Contact() {
   return (
     <> 
-    <Layout title="Contact Us"  header="text-white" footer="default">
+    <Layout title="Contact Us"  header="text-white" footer="default" url="https://wwww.benztattoo.ink/contact">
     <main>
     <section className="jumbotron jumbotron-fluid pb-0 bg-dark">
         <div className="bg o-5" style={{backgroundImage: `url(/images/contact.jpg)`}} />

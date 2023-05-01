@@ -57,7 +57,7 @@ function Aftercare() {
 
   return (
     <>
-    <Layout title="Aftercare Instruction"  header="" footer="default">
+    <Layout title="Aftercare Instruction"  header="" footer="default" url="https://wwww.benztattoo.ink/aftercare">
     <main>
         <section className="pt-0 border-bottom">
           <div className="container pb-5">

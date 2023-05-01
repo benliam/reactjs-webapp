@@ -66,7 +66,8 @@ function AppointmentEmbed() {
     </Head>
     <Layout title="Book an appointment" 
         header="text-white"
-        footer="">
+        footer=""
+        url="https://wwww.benztattoo.ink/contact">
       <main>
       <section className="pt-0">
         <div className="jumbotron jumbotron-fluid vh-50 d-flex align-items-center bg-dark text-white">
