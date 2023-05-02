@@ -15,8 +15,8 @@ function Header(props) {
         <header className={`fixed-top ${Options}`}>
             <div className="navbar">
                 <a className="navbar-brand" href="/">
-                    <img src='/images/logos/benz-logo.png' placeholder="blur" className="default"  ></img>
-                    <img src='/images/logos/benz-logo-white.png' className="inverted"  ></img>
+                    <img src='/images/logos/benz-logo.png' alt="Benz.Tattoo Design Studio Da Nang" placeholder="blur" className="default"  ></img>
+                    <img src='/images/logos/benz-logo-white.png' alt="Benz.Tattoo Design Studio Da Nang" className="inverted"  ></img>
                 </a>
 
 
