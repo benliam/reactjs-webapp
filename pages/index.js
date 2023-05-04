@@ -26,7 +26,7 @@ function Home() {
 
               <li className="glide__slide invert">
                 <div className="jumbotron jumbotron-fluid vh-100 d-flex align-items-center">
-                  <div className="bg o-8" style={{backgroundImage: `url('/images/slider/slide4.png')` }} />
+                  <div className="bg o-8" style={{backgroundImage: `url('/images/slider/slide4.jpg')` }} />
                   <div className="container-fluid py-6"><a className="tilt no-link mx-auto" href="/about">
                       <h6>Design inquires</h6>
                       <h4 className="massive">
