@@ -10,7 +10,7 @@ function OurWork({ images }) {
 
   return (
     <>
-    <Layout title="Our work"  header="" footer="default" url="https://wwww.benztattoo.ink/our-work">
+    <Layout title="Our work"  header="" footer="default" url="https://benztattoo.ink/our-work">
     <main>
         <section>
           <div className="container-fluid py-6">
