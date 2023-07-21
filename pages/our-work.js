@@ -1,7 +1,6 @@
 // Import core layout
 import Layout from './Compontents/Layout';
 // server side libries
-import { createClient } from '@supabase/supabase-js'
 import Image from 'next/image'
 import Head from 'next/head'
 import Script from 'next/script'
@@ -13,21 +12,17 @@ function OurWork({ images }) {
     <Layout title="Our work"  header="" footer="default" url="https://benztattoo.ink/our-work">
     <main>
         <section>
-          <div className="container-fluid py-6">
+          <div className="container-fluid py-4">
             <h1> <span className="d-block in-left">Our Work — tattoo</span></h1>
             <h3 className="d-block in-top">Check out more work at @benz.tattoodesign</h3>
           </div>
           <div className="container-fluid"> 
-          <figure data-behold-id="BoXO5wNF1z5dVHN4lkG0"></figure>
-          <Script src="https://w.behold.so/widget.js" type="module" strategy="afterInteractive"/>
+          <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer />
+          <div class="elfsight-app-eeb7b2a8-e989-4eea-b73f-bad4a7f5f225"></div>
           </div>
 
           <div className="container my-5 mt-5 pt-3 py-6">
             <div className="row justify-content-md-center text-center">
-
-            <div className="col-sm-8 pb-5">
-               <a href='https://instagram.com/benz.tattoo.design' rel="noreferrer" className="btn btn-primary" target="_blank">Load more</a>
-              </div>
 
               <div className="col-sm-8">
                 <h3>We work with 100% our passion</h3>
@@ -38,6 +33,7 @@ function OurWork({ images }) {
         </section>
       </main>
     </Layout>
+
   </>
   )
 }
