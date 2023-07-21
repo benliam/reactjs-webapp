@@ -2,6 +2,7 @@
 import Layout from './Compontents/Layout';
 
 import Image from 'next/image'
+import Script from 'next/script'
 
 // hero image
 import HeroPage from '../public/images/about-page-hero.jpg'
@@ -102,11 +103,8 @@ function AboutUs() {
         </div>
       </div>
 
-
-        <div>
         <div className="container">
-          <h5 className="border-bottom pb-5">Sponsored</h5>
-        </div>
+        <h5 className="border-bottom pb-5">Sponsored</h5>
         <div className="py-3">
               <div className="container">
                 <div className="row text-center">
@@ -119,6 +117,13 @@ function AboutUs() {
                 </div>
               </div>
             </div>
+          </div> 
+
+         <div className="container">
+      <h5 className="border-top py-5 mb-0"></h5>
+
+         <Script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer />
+        <div className="elfsight-app-9519ecd4-adc1-4e3c-bdf0-12e64bc906aa"></div>
           </div> 
         </section>
       </main>
