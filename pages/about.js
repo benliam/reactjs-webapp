@@ -39,18 +39,16 @@ function AboutUs() {
             </div>
           </div>
 
-        <div className="container">
-          <Image className="w-100 h-60 img-fluid"  alt="About us - Benz.Tattoo Design Studio" placeholder="blur" src={HeroPage} />
-          </div>
-          <div className="container py-6">
-            <div className="row justify-content-md-center text-center">
-              <div className="col-sm-8 pt-4">
-                <h3 className="pb-4">TATTOO / DESIGN / PIERCING</h3>
-                <p>
-                Established in 2018 by Liam Ng, located at the centrer of Da Nang City. At BenZ.Tattoo Studio, our main goal is to create a one of a kind custom tattoo just for you. We have 2 talented tattoo artists who specialise in different styles. We are focusing on providing clean, professional and friendly tattooing in a modern and relaxing environment.
-                </p>
-              </div>
-            </div>
+        <div className="container py-6">
+        <div className="row justify-content-md-center in-top">
+  <div className="col-sm-6">
+    <h2>We don't just do tattoo!</h2>
+    <p>
+    Established in 2018 by Liam Ng, located at the centrer of Da Nang. Our main goal is to create a one of a kind custom tattoo just for you and focusing on providing clean, professional and friendly tattooing in a modern and relaxing environment.
+    </p>
+  </div>
+</div>
+
           </div>  
 
 

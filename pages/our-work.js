@@ -18,7 +18,7 @@ function OurWork({ images }) {
           </div>
           <div className="container-fluid"> 
           <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer />
-          <div class="elfsight-app-eeb7b2a8-e989-4eea-b73f-bad4a7f5f225"></div>
+          <div className="elfsight-app-eeb7b2a8-e989-4eea-b73f-bad4a7f5f225"></div>
           </div>
 
           <div className="container my-5 mt-5 pt-3 py-6">
