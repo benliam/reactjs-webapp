@@ -25,7 +25,7 @@ function SignUpForm() {
     <div className="row">
       <div className="offset-sm-2 col-sm-8">
         <h3>Hình xăm "free" cho những bạn có sinh nhật vào tháng 8!</h3>
-        <p class>
+        <p>
             Tháng 8 là tháng bắt đầu mùa thu và cũng là tháng mình yêu thích, nên mình muốn tặng những hình xăm kỷ niệm cho những bạn có ngày sinh nhật vào tháng này.
             Các bạn điền đầy đủ thông tin đăng ký ở form bên dưới và đọc những lưu ý khi đăng ký nha. Mình sẽ confirm cho những yêu cầu đăng ký hợp lệ và sắp xếp thời gian cho lịch sớm nhất
         </p>
