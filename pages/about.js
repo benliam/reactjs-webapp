@@ -42,7 +42,7 @@ function AboutUs() {
 
         <div className="container py-6">
         <div className="row justify-content-md-center in-top">
-  <div className="col-sm-6">
+  <div className="col-sm-12">
     <h2>We don&lsquo;t just do tattoo!</h2>
     <p>
     Established in 2018 by Liam Ng, located at the centrer of Da Nang. Our main goal is to create a one of a kind custom tattoo just for you and focusing on providing clean, professional and friendly tattooing in a modern and relaxing environment.
