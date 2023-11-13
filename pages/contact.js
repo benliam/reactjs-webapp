@@ -43,7 +43,7 @@ function Contact() {
             </div>
             <div className="row size-sm">
               <div className="col-lg-4 offset-lg-2">
-                <p><strong>Benz.Tattoo Design Studio</strong><br /><a target="_blank"  rel="noreferrer" style={{color: "#2B3499"}} href="https://www.google.com/maps/dir//Benz.Tattoo+Design+-+Tattoo+Studio,+334%2F6+%C4%90%E1%BB%91ng+%C4%90a,+Thanh+B%C3%ACnh,+H%E1%BA%A3i+Ch%C3%A2u,+%C4%90%C3%A0+N%E1%BA%B5ng+550000/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x314219a0ef6f61b1:0xc4eab2b582107090?sa=X&ved=2ahUKEwi8idjdw8CCAxX3qFYBHXz8ASgQ48ADegQIGxAA">334/6 Dong Da street<br />Hai Chau dist, Da Nang, Vietnam</a></p>
+                <p><strong>Benz.Tattoo Design Studio</strong><br /><a rel="noreferrer" style={{color: "#2B3499"}} href="https://www.google.com/maps/dir//Benz.Tattoo+Design+-+Tattoo+Studio,+334%2F6+%C4%90%E1%BB%91ng+%C4%90a,+Thanh+B%C3%ACnh,+H%E1%BA%A3i+Ch%C3%A2u,+%C4%90%C3%A0+N%E1%BA%B5ng+550000/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x314219a0ef6f61b1:0xc4eab2b582107090?sa=X&ved=2ahUKEwi8idjdw8CCAxX3qFYBHXz8ASgQ48ADegQIGxAA">334/6 Dong Da street<br />Hai Chau dist, Da Nang, Vietnam</a></p>
               </div>
               <div className="col-lg-1 offset-lg-1">
                 <p> <strong>Phone<br />Mail<br />Instagram<br />Facebook<br /></strong></p>
