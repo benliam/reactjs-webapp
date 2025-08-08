@@ -19,8 +19,7 @@ function MyApp({ Component, pageProps }) {
     </Head>
     <Component {...pageProps} />
     <Script src="js/main.bundle.js" strategy="beforeInteractive"/>
-    <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-17086473470" strategy="afterInteractive"/>
-
+    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-FDRP593V6T" strategy="afterInteractive"/>
     <Script
       strategy="afterInteractive"
       id={1}
@@ -30,13 +29,13 @@ function MyApp({ Component, pageProps }) {
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
       
-        gtag('config', 'AW-17086473470');
+        gtag('config', 'G-FDRP593V6T');
       `,
       }}/>
 
     </>
   )
-}
+} 
 
 export default MyApp
 
